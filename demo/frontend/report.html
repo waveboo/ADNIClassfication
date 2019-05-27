@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>检测报告</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="preloader"></div>
+<section id="introduction">
+    <div id="toprint">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">检测报告</h3>
+                    <div class="section-title-divider"></div>
+                    <p id="time" class="section-description">2019年4月22日</p>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeInUp">
+            <div class="row" style="text-align: center;">
+                <p><b>经过检测，您目前处于<span id="type">AD</span>阶段的概率较大，诊断出患病的可能性为<span id="score">95.26%</span></b></p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" style="width: 100%;" src="http://127.0.0.1:5000/get_img?filename=2.png" alt="Card image cap">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">冠状面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" style="width: 100%;" src="http://127.0.0.1:5000/get_img?filename=1.png" alt="Card image cap">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">矢状面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" style="width: 100%;" src="http://127.0.0.1:5000/get_img?filename=3.png" alt="Card image cap">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">横断面</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-push-1 about-content">
+                    <h3>病人：</h3>
+                    <p id="patient" class="about-text">004_S_1054</p>
+                    <h3>编号：</h3>
+                    <p id="id" class="about-text">250072</p>
+                    <h3>接受扫描时间：</h3>
+                    <p id="date" class="about-text">2019-04-22</p>
+                    <h3>病人类型：</h3>
+                    <p id="tp" class="about-text">Original</p>
+                    <h3>被访次数：</h3>
+                    <p id="visit" class="about-text">1</p>
+                    <h3>MMSE：</h3>
+                    <p class="about-text">暂无</p>
+
+                </div>
+                <div class="col-md-3 col-md-push-4 about-content">
+                    <h3>性别：</h3>
+                    <p id="sex" class="about-text">Male</p>
+                    <h3>年龄：</h3>
+                    <p id="age" class="about-text">85</p>
+                    <h3>图像类型：</h3>
+                    <p id="dtype" class="about-text">MRI</p>
+                    <h3>图像描述：</h3>
+                    <p id="dinfo" class="about-text">MPRAGE</p>
+                    <h3>图像格式：</h3>
+                    <p id="format" class="about-text">DCM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dis-row row dig-btn">
+        <button id="print" type="button" class="btn btn-primary">打印报告</button>
+    </div>
+</section>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/reportjs.js"></script>
+</body>
+</html>
